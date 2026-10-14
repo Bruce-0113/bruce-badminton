@@ -2,6 +2,8 @@
 name = "badminton-coach"
 version = "0.1.0"
 description = "M0: 羽球教練 LLM（Qwen3.5-4B LoRA + MLX 4-bit，跑在 Apple Silicon Mac）"
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.11,<3.14"
 dependencies = [
     "mlx-lm[train]==0.32.0; sys_platform == 'darwin'",

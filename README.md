@@ -36,3 +36,7 @@ bash scripts/m0.sh serve       # 開 Gradio 聊天介面
 - **資料量**：`generate.py questions --n 5` 可以多出題；資料量變了，記得調 `lora_m0.yaml` 的 `iters`（約 筆數 × 3 ÷ 8）。
 - **記憶體不足**：把 `batch_size` 改成 1、`max_seq_length` 改成 1536。
 - **答案品質**：生成模型換成更大的（例如透過 LM Studio 跑別的模型），改 `scripts/m0.sh` 的 `GEN_MODEL` 或 `--base-url`。
+
+## 授權
+
+程式碼以 [MIT License](LICENSE) 釋出。使用的模型（Qwen3.5）有各自的授權，以 Hugging Face 上的模型頁面為準；本 repo 不包含任何模型權重或合成資料。
